@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-gold {
+        @apply bg-gradient-to-r from-[#D4AF37] to-[#F0C040] text-[#0A1F14] font-bold
+               px-5 py-2.5 rounded-xl text-sm transition hover:shadow-lg hover:shadow-amber-200/50
+               hover:-translate-y-px;
+    }
+    .btn-green {
+        @apply bg-[#1B4332] text-white font-semibold px-5 py-2.5 rounded-xl text-sm
+               transition hover:bg-[#2D6A4F] hover:-translate-y-px;
+    }
+    .input-base {
+        @apply w-full border-2 border-gray-200 focus:border-[#1B4332] rounded-xl
+               px-4 py-3 text-sm outline-none transition;
+    }
+    .dir-rtl { direction: rtl; }
+}
